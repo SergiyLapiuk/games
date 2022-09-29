@@ -4,7 +4,7 @@ var bird;
 var pipes = [];
 
 function setup() {
-  createCanvas(1500, 800);
+  createCanvas(window.innerWidth, window.innerHeight);
   bird = new Bird();
   pipes.push(new Pipe());
 }
@@ -36,6 +36,5 @@ function draw() {
 function keyPressed() {
   if (key == ' ') {
     bird.up();
-    //console.log("SPACE");
   }
 }
